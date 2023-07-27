@@ -1,0 +1,179 @@
+{
+  "config": {
+    "configFile": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\playwright.config.ts",
+    "rootDir": "C:/BS-1367/Health Tech/HBKWorld_Cookie_Settings",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 64505.90199999884
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/BS-1367/Health Tech/HBKWorld_Cookie_Settings/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "C:/BS-1367/Health Tech/HBKWorld_Cookie_Settings",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/ContentContainter.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/BS-1367/Health Tech/HBKWorld_Cookie_Settings/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/BS-1367/Health Tech/HBKWorld_Cookie_Settings",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/ContentContainter.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\ContentContainter.test.ts",
+      "file": "tests/ContentContainter.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "click application content bar_SC001",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30004,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.click at tests\\ContentContainter.test.ts:9:6\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-27T14:47:54.410Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\test-results\\tests-ContentContainter-click-application-content-bar-SC001-chrome\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\test-results\\tests-ContentContainter-click-application-content-bar-SC001-chrome\\test-failed-1.png"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30014,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\tests\\ContentContainter.test.ts",
+                        "column": 6,
+                        "line": 9
+                      },
+                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//span[@class=\\'cmp-tabs__tab-title\\']/text())[2]')\n============================================================\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m     \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//span[@class='cmp-tabs__tab-title']/text())[2]\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m   expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//h2[contains(text(),'Applications')])\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\tests\\ContentContainter.test.ts:9:6\u001b[22m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.click at tests\\ContentContainter.test.ts:9:6\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2023-07-27T14:48:26.103Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\test-results\\tests-ContentContainter-click-application-content-bar-SC001-chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Cookie_Settings\\test-results\\tests-ContentContainter-click-application-content-bar-SC001-chrome-retry1\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ce0ee957f8dc3f8ab250-afa62bd919c8e5a5afba",
+          "file": "tests/ContentContainter.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
