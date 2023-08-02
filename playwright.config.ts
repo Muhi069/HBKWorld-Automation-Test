@@ -15,10 +15,10 @@ const config: PlaywrightTestConfig = {
       },
     },
   ],
-  testMatch: ["tests/ContentContainter.test.ts"],
+  testMatch: ["test-cases/cookieModal.test.ts"],
   use: {
-    baseURL: "https://dev.hbkworld.com/en#tabs-44a431fcb6-item-615e5a4dc4-tab",
-    headless: false,
+    baseURL: "https://www.hbkworld.com/en",
+    headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     launchOptions: {
