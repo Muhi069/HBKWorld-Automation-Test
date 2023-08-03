@@ -1,33 +1,29 @@
-import { devices, type PlaywrightTestConfig } from "@playwright/test";
+import { defineConfig } from "@playwright/test";
 
-const config: PlaywrightTestConfig = {
-  projects: [
-    {
-      name: "chrome",
-      use: {
-        ...devices["Desktop Chrome"],
-      },
-    },
-    {
-      name: "firefox",
-      use: {
-        ...devices["Desktop Firefox"],
-      },
-    },
-  ],
-  testMatch: ["test-cases/cookieModal.test.ts"],
+export default defineConfig({
+  retries: 0,
+  // testDir: "test-cases/cookie_modal2_test.spec.ts",
+  testMatch: "test-cases/cookie_modal2_test.spec.ts",
   use: {
+    browserName: "chromium",
+    headless: false,
     baseURL: "https://www.hbkworld.com/en",
-    headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
-    launchOptions: {
-      slowMo: 1000,
-    },
   },
-  retries: 1,
+  expect: {
+    timeout: 10_000,
+  },
+
   reporter: [
     ["dot"],
+
+    [
+      "junit",
+      {
+        outputFile: "results.xml",
+      },
+    ],
     [
       "json",
       {
@@ -41,5 +37,4 @@ const config: PlaywrightTestConfig = {
       },
     ],
   ],
-};
-export default config;
+});

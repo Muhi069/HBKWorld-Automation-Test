@@ -1,0 +1,49 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="15.83699199999869">
+<testsuite name="test-cases\cookie_modal2_test.spec.ts" timestamp="2023-08-03T14:47:15.327Z" hostname="" tests="2" failures="1" skipped="0" time="13.869" errors="0">
+<testcase name="All cookie modal test cases › tc-007, accept all cookie options" classname="test-cases\cookie_modal2_test.spec.ts" time="6.619">
+<failure message="cookie_modal2_test.spec.ts:51:8 tc-007, accept all cookie options" type="FAILURE">
+<![CDATA[  test-cases\cookie_modal2_test.spec.ts:51:8 › All cookie modal test cases › tc-007, accept all cookie options 
+
+    Error: locator.check: Target closed
+    =========================== logs ===========================
+    waiting for locator('xpath=(//div[@class=\'coi-banner-consent-field\'])[3]/div/label/input')
+      locator resolved to <input tabindex="0" data-index="0" type="checkbox" clas…/>
+    attempting click action
+      waiting for element to be visible, enabled and stable
+      element is visible, enabled and stable
+      scrolling into view if needed
+    ============================================================
+
+       at pages\cookieModalPage.ts:58
+
+      56 |             "]/div/label/input"
+      57 |         )
+    > 58 |         .check();
+         |          ^
+      59 |     }
+      60 |   }
+      61 |
+
+        at CookieModalPage.selectAllOptions (C:\BS-1367\Health Tech\HBKWorld_Automation\pages\cookieModalPage.ts:58:10)
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\video.webm]]
+
+[[ATTACHMENT|test-results\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="All cookie modal test cases › tc-010, toggle marketing cookie off" classname="test-cases\cookie_modal2_test.spec.ts" time="7.25">
+</testcase>
+</testsuite>
+</testsuites>

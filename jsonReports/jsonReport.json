@@ -12,13 +12,19 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 106331.16699999943
+      "totalTime": 15833.414999991655
     },
     "preserveOutput": "always",
     "reporter": [
       [
         "dot",
         null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
       ],
       [
         "json",
@@ -42,26 +48,13 @@
       {
         "outputDir": "C:/BS-1367/Health Tech/HBKWorld_Automation/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "id": "chrome",
-        "name": "chrome",
+        "retries": 0,
+        "id": "",
+        "name": "",
         "testDir": "C:/BS-1367/Health Tech/HBKWorld_Automation",
         "testIgnore": [],
         "testMatch": [
-          "test-cases/cookieModal.test.ts"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/BS-1367/Health Tech/HBKWorld_Automation/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/BS-1367/Health Tech/HBKWorld_Automation",
-        "testIgnore": [],
-        "testMatch": [
-          "test-cases/cookieModal.test.ts"
+          "test-cases/cookie_modal2_test.spec.ts"
         ],
         "timeout": 30000
       }
@@ -74,581 +67,84 @@
   },
   "suites": [
     {
-      "title": "test-cases\\cookieModal.test.ts",
-      "file": "test-cases/cookieModal.test.ts",
+      "title": "test-cases\\cookie_modal2_test.spec.ts",
+      "file": "test-cases/cookie_modal2_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "All cookie modal test cases",
-          "file": "test-cases/cookieModal.test.ts",
-          "line": 3,
+          "file": "test-cases/cookie_modal2_test.spec.ts",
+          "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "tc-001, cookie modal visibility",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 11544,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:20:57.493Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-22562152a624c76a4ad5",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "tc-002, decline cookie",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 8376,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:09.372Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-28024d27102b9c5b789c",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 15,
-              "column": 7
-            },
-            {
-              "title": "tc-003, accept all cookie",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 1174,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[contains(text(),\\'Decline\\')]')\n  locator resolved to <button tabindex=\"0\" role=\"alert\" id=\"declineButton\" ari…>Decline</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[contains(text(),\\'Decline\\')]')\n  locator resolved to <button tabindex=\"0\" role=\"alert\" id=\"declineButton\" ari…>Decline</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n    at cookieModalPage.ClickDecline (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:23:69)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:17:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 69,
-                          "line": 23
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickDecline\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[contains(text(),'Decline')]\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m \u001b[90m//clicking decline button\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickAcceptAll\u001b[39m() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 69,
-                            "line": 23
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[contains(text(),\\'Decline\\')]')\n  locator resolved to <button tabindex=\"0\" role=\"alert\" id=\"declineButton\" ari…>Decline</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickDecline\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[contains(text(),'Decline')]\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m \u001b[90m//clicking decline button\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickAcceptAll\u001b[39m() {\u001b[0m\n\n\u001b[2m    at cookieModalPage.ClickDecline (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:23:69)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:17:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:17.749Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-003-accept-all-cookie-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-003-accept-all-cookie-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 69,
-                        "line": 23
-                      }
-                    },
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 8114,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:21:19.352Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-e14ab5f6a562fbb37d98",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "tc-004, accept functional cookie",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "failed",
-                      "duration": 1123,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@aria-label=\\'Accept all\\']')\n  locator resolved to <button tabindex=\"0\" aria-label=\"Accept all\" class=\"coi-…>Accept all</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@aria-label=\\'Accept all\\']')\n  locator resolved to <button tabindex=\"0\" aria-label=\"Accept all\" class=\"coi-…>Accept all</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n    at cookieModalPage.ClickAcceptAll (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:28:67)",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 67,
-                          "line": 28
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickAcceptAll\u001b[39m() {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"//button[@aria-label='Accept all']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@aria-label='Accept all']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m \u001b[90m//clicking accept all button\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mFunctionalOption\u001b[39m() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 67,
-                            "line": 28
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//button[@aria-label=\\'Accept all\\']')\n  locator resolved to <button tabindex=\"0\" aria-label=\"Accept all\" class=\"coi-…>Accept all</button>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickAcceptAll\u001b[39m() {\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"//button[@aria-label='Accept all']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@aria-label='Accept all']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m \u001b[90m//clicking accept all button\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mFunctionalOption\u001b[39m() {\u001b[0m\n\n\u001b[2m    at cookieModalPage.ClickAcceptAll (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:28:67)\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:27.746Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-004-accept-functional-cookie-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-004-accept-functional-cookie-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 67,
-                        "line": 28
-                      }
-                    },
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 7853,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:21:29.280Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-9085a2130d0d6524e748",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 25,
-              "column": 7
-            },
-            {
-              "title": "tc-005, accept statistical cookie",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 7617,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:37.415Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-f82145cece0c0f74dc08",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 35,
-              "column": 7
-            },
-            {
-              "title": "tc-006, accept marketing cookie",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "failed",
-                      "duration": 1243,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n    at cookieModalPage.StatisticalOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:44:8)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:41:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 8,
-                          "line": 44
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mMarketingOption\u001b[39m() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 8,
-                            "line": 44
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mMarketingOption\u001b[39m() {\u001b[0m\n\n\u001b[2m    at cookieModalPage.StatisticalOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:44:8)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:41:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:45.033Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-006-accept-marketing-cookie-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-006-accept-marketing-cookie-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 8,
-                        "line": 44
-                      }
-                    },
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 7631,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:21:46.691Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-6c9db89ff2d4b1dbc6f0",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 45,
-              "column": 7
-            },
-            {
               "title": "tc-007, accept all cookie options",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
+                  "projectId": "",
+                  "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "status": "failed",
-                      "duration": 1206,
+                      "duration": 6619,
                       "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n    at cookieModalPage.MarketingOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:50:8)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:51:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 8,
-                          "line": 50
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mSelectAllOptions\u001b[39m() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 8,
-                            "line": 50
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mSelectAllOptions\u001b[39m() {\u001b[0m\n\n\u001b[2m    at cookieModalPage.MarketingOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:50:8)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:51:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:21:54.593Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 8,
-                        "line": 50
-                      }
-                    },
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 7553,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:21:56.298Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-cdc7adfec84897449ee5",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 55,
-              "column": 7
-            },
-            {
-              "title": "tc-008, toggle functional cookie off",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "failed",
-                      "duration": 1213,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n    at cookieModalPage.SelectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:65:10)",
+                        "message": "locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================",
+                        "stack": "Error: locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n    at CookieModalPage.selectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:58:10)",
                         "location": {
                           "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
                           "column": 10,
-                          "line": 65
+                          "line": 58
                         },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:65\n\n\u001b[0m \u001b[90m 63 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 64 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m         \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 66 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 68 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
                             "column": 10,
-                            "line": 65
+                            "line": 58
                           },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:65\n\n\u001b[0m \u001b[90m 63 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 64 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m         \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 66 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 67 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 68 |\u001b[39m\u001b[0m\n\n\u001b[2m    at cookieModalPage.SelectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:65:10)\u001b[22m"
+                          "message": "Error: locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m\u001b[0m\n\n\u001b[2m    at CookieModalPage.selectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:58:10)\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-02T12:22:04.149Z",
+                      "startTime": "2023-08-03T14:47:15.734Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-008-toggle-functional-cookie-off-chrome\\video.webm"
+                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\\video.webm"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-008-toggle-functional-cookie-off-chrome\\test-failed-1.png"
+                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\\test-failed-1.png"
                         }
                       ],
                       "errorLocation": {
                         "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
                         "column": 10,
-                        "line": 65
+                        "line": 58
                       }
-                    },
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 7683,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:22:05.839Z",
-                      "attachments": []
                     }
                   ],
-                  "status": "flaky"
+                  "status": "unexpected"
                 }
               ],
-              "id": "7380755e7f035f886cdf-0118ad9f161a87a7bccf",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 64,
-              "column": 7
-            },
-            {
-              "title": "tc-009, toggle statistical cookie off",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "failed",
-                      "duration": 1269,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n============================================================\n    at cookieModalPage.FunctionalOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:34:8)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:70:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 8,
-                          "line": 34
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[2]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   isDeclineBtnStatusChanged() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 8,
-                            "line": 34
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[2]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[2]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m   isDeclineBtnStatusChanged() {\u001b[0m\n\n\u001b[2m    at cookieModalPage.FunctionalOption (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:34:8)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:70:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:22:13.803Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-009-toggle-statistical-cookie-off-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-009-toggle-statistical-cookie-off-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 8,
-                        "line": 34
-                      }
-                    },
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 7831,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:22:15.519Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-2858e44d1846e3bc5436",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 75,
-              "column": 7
+              "id": "060191e258d7980b551d-4e4d3fff76ab51b8292e",
+              "file": "test-cases/cookie_modal2_test.spec.ts",
+              "line": 51,
+              "column": 8
             },
             {
               "title": "tc-010, toggle marketing cookie off",
@@ -659,152 +155,28 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
+                  "projectId": "",
+                  "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "status": "failed",
-                      "duration": 1651,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n    at cookieModalPage.TogglingStatisticalOff (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:86:8)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:81:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 8,
-                          "line": 86
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:86\n\n\u001b[0m \u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 87 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 88 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 89 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 8,
-                            "line": 86
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:86\n\n\u001b[0m \u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 85 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 87 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 88 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 89 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[3]/div/label/input\"\u001b[39m)\u001b[0m\n\n\u001b[2m    at cookieModalPage.TogglingStatisticalOff (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:86:8)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:81:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-02T12:22:23.623Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-010-toggle-marketing-cookie-off-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-010-toggle-marketing-cookie-off-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 8,
-                        "line": 86
-                      }
-                    },
-                    {
-                      "workerIndex": 7,
+                      "workerIndex": 1,
                       "status": "passed",
-                      "duration": 7768,
+                      "duration": 7250,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:22:25.690Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "7380755e7f035f886cdf-fdf75ae282236684924e",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 85,
-              "column": 7
-            },
-            {
-              "title": "tc-011, cookie modal persistent",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chrome",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "failed",
-                      "duration": 1130,
-                      "error": {
-                        "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================",
-                        "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n    at cookieModalPage.TogglingMarketingOff (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:96:8)\n    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:91:17",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 8,
-                          "line": 96
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:96\n\n\u001b[0m \u001b[90m 94 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 95 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 97 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 98 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 99 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 8,
-                            "line": 96
-                          },
-                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[4]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n  done scrolling\n  performing click action\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:96\n\n\u001b[0m \u001b[90m 94 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 95 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m       \u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 97 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 98 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[0m\n\u001b[0m \u001b[90m 99 |\u001b[39m       \u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='coi-banner-consent-field'])[4]/div/label/input\"\u001b[39m)\u001b[0m\n\n\u001b[2m    at cookieModalPage.TogglingMarketingOff (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:96:8)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-cases\\cookieModal.test.ts:91:17\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-02T12:22:33.731Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-011-cookie-modal-persistent-chrome\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookieModal-All-cookie-modal-test-cases-tc-011-cookie-modal-persistent-chrome\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 8,
-                        "line": 96
-                      }
-                    },
-                    {
-                      "workerIndex": 8,
-                      "status": "passed",
-                      "duration": 7604,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2023-08-02T12:22:35.328Z",
+                      "startTime": "2023-08-03T14:47:23.431Z",
                       "attachments": []
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
-              "id": "7380755e7f035f886cdf-ddba739ba401388c9a4d",
-              "file": "test-cases/cookieModal.test.ts",
-              "line": 95,
-              "column": 7
+              "id": "060191e258d7980b551d-7dc4c10cea00414e09cd",
+              "file": "test-cases/cookie_modal2_test.spec.ts",
+              "line": 71,
+              "column": 8
             }
           ]
         }

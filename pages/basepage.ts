@@ -1,16 +1,13 @@
-import { Locator, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
 
-export default class basepage {
+export default class BasePage {
+  page: Page;
 
-    constructor(public page: Page) {
-        
-    }
+  constructor(page: Page) {
+    this.page = page;
+  }
 
-
-
-    async clickOnElement(locator: Locator) {
-         this.page.locator(locator);
-    }
-
-    
+  async VisitPage(url: string) {
+    await this.page.goto(url);
+  }
 }
