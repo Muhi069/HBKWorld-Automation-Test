@@ -3,7 +3,7 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   retries: 0,
   // testDir: "test-cases/cookie_modal2_test.spec.ts",
-  testMatch: "test-cases/cookie_modal2_test.spec.ts",
+  testMatch: "test-cases/homepage_test.spec.ts",
   use: {
     browserName: "chromium",
     headless: false,

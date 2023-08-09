@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 15833.414999991655
+      "totalTime": 35769.4450000003
     },
     "preserveOutput": "always",
     "reporter": [
@@ -54,7 +54,7 @@
         "testDir": "C:/BS-1367/Health Tech/HBKWorld_Automation",
         "testIgnore": [],
         "testMatch": [
-          "test-cases/cookie_modal2_test.spec.ts"
+          "test-cases/homepage_test.spec.ts"
         ],
         "timeout": 30000
       }
@@ -67,87 +67,20 @@
   },
   "suites": [
     {
-      "title": "test-cases\\cookie_modal2_test.spec.ts",
-      "file": "test-cases/cookie_modal2_test.spec.ts",
+      "title": "test-cases\\homepage_test.spec.ts",
+      "file": "test-cases/homepage_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "All cookie modal test cases",
-          "file": "test-cases/cookie_modal2_test.spec.ts",
-          "line": 5,
+          "title": "All homepage component test",
+          "file": "test-cases/homepage_test.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "tc-007, accept all cookie options",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 6619,
-                      "error": {
-                        "message": "locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================",
-                        "stack": "Error: locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n    at CookieModalPage.selectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:58:10)",
-                        "location": {
-                          "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                          "column": 10,
-                          "line": 58
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                            "column": 10,
-                            "line": 58
-                          },
-                          "message": "Error: locator.check: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=(//div[@class=\\'coi-banner-consent-field\\'])[3]/div/label/input')\n  locator resolved to <input tabindex=\"0\" data-index=\"0\" type=\"checkbox\" clas…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n  element is visible, enabled and stable\n  scrolling into view if needed\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\cookieModalPage.ts:58\n\n\u001b[0m \u001b[90m 56 |\u001b[39m             \u001b[32m\"]/div/label/input\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         )\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         \u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m\u001b[0m\n\n\u001b[2m    at CookieModalPage.selectAllOptions (C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts:58:10)\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-08-03T14:47:15.734Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\\video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\test-results\\test-cases-cookie_modal2_test-All-cookie-modal-test-cases-tc-007-accept-all-cookie-options\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\BS-1367\\Health Tech\\HBKWorld_Automation\\pages\\cookieModalPage.ts",
-                        "column": 10,
-                        "line": 58
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "060191e258d7980b551d-4e4d3fff76ab51b8292e",
-              "file": "test-cases/cookie_modal2_test.spec.ts",
-              "line": 51,
-              "column": 8
-            },
-            {
-              "title": "tc-010, toggle marketing cookie off",
+              "title": "tc-007, career link works or not",
               "ok": true,
               "tags": [],
               "tests": [
@@ -159,24 +92,184 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7250,
+                      "duration": 6705,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-03T14:47:23.431Z",
+                      "startTime": "2023-08-09T13:19:13.651Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "060191e258d7980b551d-7dc4c10cea00414e09cd",
-              "file": "test-cases/cookie_modal2_test.spec.ts",
-              "line": 71,
-              "column": 8
+              "id": "9d0ce89b59ea52c8d57c-2ee98cbc85d141253f04",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "tc=009, search button clickable or not",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4769,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-09T13:19:20.843Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-02bc5802a562980e6030",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "tc=010, search something and verify search field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 9946,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-09T13:19:25.615Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-0e4fc51309ac0799cc82",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "tc-011, product tab functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4491,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-09T13:19:35.563Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-4d9683f37e2413c59d01",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "tc-012, application tab functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4097,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-09T13:19:40.056Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-223096dec7773a56bd4f",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "tc-013, services & support tab functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4579,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-09T13:19:44.155Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-b4bcc8b3f397b4876256",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 72,
+              "column": 7
             }
           ]
         }

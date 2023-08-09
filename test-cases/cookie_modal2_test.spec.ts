@@ -10,7 +10,7 @@ test.describe("All cookie modal test cases", () => {
   test("tc-001, cookie modal visibility", async ({ page }) => {
     await expect(cookieModal.modalTitle).toBeVisible();
     await expect(cookieModal.declineBTN).toHaveText("Decline");
-    expect(cookieModal.acceptAllBTN).toHaveText("Accept all");
+    await expect(cookieModal.acceptAllBTN).toHaveText("Accept all");
   });
 
   test("tc-002, decline cookie", async ({ page }) => {

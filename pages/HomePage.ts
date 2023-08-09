@@ -209,8 +209,8 @@ export default class Homepage extends BasePage {
     await this.searchBtn.click();
   }
 
-  async typeInSearchBox() {
-    await this.searchField.fill("aero");
+  async typeInSearchBox(string: string) {
+    await this.searchField.type(string);
   }
 
   async searchGoBTNClick() {
@@ -219,5 +219,13 @@ export default class Homepage extends BasePage {
 
   async clickProductTab() {
     await this.productTab.click();
+  }
+
+  async clickApplicationsTab() {
+    await this.applicationsTab.click();
+  }
+
+  async clickServiceAndSupportTab() {
+    await this.serviceTab.click();
   }
 }
