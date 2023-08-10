@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 33172.493000000715
+      "totalTime": 147174.90199999884
     },
     "preserveOutput": "always",
     "reporter": [
@@ -94,12 +94,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5622,
+                      "duration": 4181,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:16.764Z",
+                      "startTime": "2023-08-10T13:10:02.480Z",
                       "attachments": []
                     }
                   ],
@@ -126,12 +126,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4999,
+                      "duration": 4080,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:22.765Z",
+                      "startTime": "2023-08-10T13:10:07.035Z",
                       "attachments": []
                     }
                   ],
@@ -140,7 +140,7 @@
               ],
               "id": "9d0ce89b59ea52c8d57c-02bc5802a562980e6030",
               "file": "test-cases/homepage_test.spec.ts",
-              "line": 26,
+              "line": 25,
               "column": 7
             },
             {
@@ -158,12 +158,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5879,
+                      "duration": 6598,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:27.765Z",
+                      "startTime": "2023-08-10T13:10:11.117Z",
                       "attachments": []
                     }
                   ],
@@ -172,7 +172,7 @@
               ],
               "id": "9d0ce89b59ea52c8d57c-0e4fc51309ac0799cc82",
               "file": "test-cases/homepage_test.spec.ts",
-              "line": 37,
+              "line": 35,
               "column": 7
             },
             {
@@ -190,12 +190,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6538,
+                      "duration": 4758,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:33.646Z",
+                      "startTime": "2023-08-10T13:10:17.717Z",
                       "attachments": []
                     }
                   ],
@@ -204,7 +204,7 @@
               ],
               "id": "9d0ce89b59ea52c8d57c-4d9683f37e2413c59d01",
               "file": "test-cases/homepage_test.spec.ts",
-              "line": 55,
+              "line": 50,
               "column": 7
             },
             {
@@ -222,12 +222,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4625,
+                      "duration": 5096,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:40.185Z",
+                      "startTime": "2023-08-10T13:10:22.476Z",
                       "attachments": []
                     }
                   ],
@@ -236,7 +236,7 @@
               ],
               "id": "9d0ce89b59ea52c8d57c-223096dec7773a56bd4f",
               "file": "test-cases/homepage_test.spec.ts",
-              "line": 67,
+              "line": 61,
               "column": 7
             },
             {
@@ -254,12 +254,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4505,
+                      "duration": 4483,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-10T07:06:44.812Z",
+                      "startTime": "2023-08-10T13:10:27.574Z",
                       "attachments": []
                     }
                   ],
@@ -268,7 +268,615 @@
               ],
               "id": "9d0ce89b59ea52c8d57c-b4bcc8b3f397b4876256",
               "file": "test-cases/homepage_test.spec.ts",
-              "line": 79,
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "tc-015, software list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:10:32.058Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-959b4616c691566f58fe",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 83,
+              "column": 7
+            },
+            {
+              "title": "tc-016, instruments list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7028,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:10:37.996Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-ae282f27013ddca9976e",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 92,
+              "column": 7
+            },
+            {
+              "title": "tc-017, transducers list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4232,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:10:45.027Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-0c56ca4750acec44daad",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 101,
+              "column": 7
+            },
+            {
+              "title": "tc-019, electric power list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8173,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:10:49.260Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-12a267e6f6d4443f83ba",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 110,
+              "column": 7
+            },
+            {
+              "title": "tc-020, oem custom sensor list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8706,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:10:57.435Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-db97f65e11fb8409ffce",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "tc-021, reliability list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6965,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:06.141Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-7ad1bf6587d0621e1bd6",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 132,
+              "column": 7
+            },
+            {
+              "title": "tc-023, hbk assured service list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6667,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:13.107Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-78fe55e5b608238c2d34",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 143,
+              "column": 7
+            },
+            {
+              "title": "tc-024, calibration list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:19.775Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-765582820b6cc3ea3c2e",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 154,
+              "column": 7
+            },
+            {
+              "title": "tc-025, material characterization list check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6533,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:25.166Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-f5f3ff8fe38efdbc1922",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 165,
+              "column": 7
+            },
+            {
+              "title": "tc-041, about in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4266,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:31.700Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-fa155085a14708b70055",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 178,
+              "column": 7
+            },
+            {
+              "title": "tc-042, our history in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6199,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:35.967Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-4d9f84129f1acd3cf383",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "tc-043, executive management in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6627,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:42.167Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-ea5e63704217f5e333ce",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 196,
+              "column": 7
+            },
+            {
+              "title": "tc-044, career in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4855,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:48.795Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-ae4d6b903092a9b15ad9",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 207,
+              "column": 7
+            },
+            {
+              "title": "tc-045, orgs and memberships in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6440,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:11:53.652Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-6ba6c0878256729d9430",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 216,
+              "column": 7
+            },
+            {
+              "title": "tc-046, business ethics in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:12:00.092Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-706390802028e5a6a745",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 227,
+              "column": 7
+            },
+            {
+              "title": "tc-047, export control in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:12:06.619Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-68567d43bcdf3f0a2f0b",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 236,
+              "column": 7
+            },
+            {
+              "title": "tc-048, quality management in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5963,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:12:12.588Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-c694c88b73144e7d5612",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 245,
+              "column": 7
+            },
+            {
+              "title": "tc-049, terms & conditions in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5488,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:12:18.553Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-8e018db9d3bc1dde97f2",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 256,
+              "column": 7
+            },
+            {
+              "title": "tc-050, applications in footer section check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4975,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-10T13:12:24.041Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d0ce89b59ea52c8d57c-aa071afd50b0c34f9677",
+              "file": "test-cases/homepage_test.spec.ts",
+              "line": 267,
               "column": 7
             }
           ]

@@ -1,16 +1,54 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="33.17283800000045">
-<testsuite name="test-cases\homepage_test.spec.ts" timestamp="2023-08-10T07:06:16.356Z" hostname="" tests="6" failures="0" skipped="0" time="32.168" errors="0">
-<testcase name="All homepage component test › tc-007, career link works or not" classname="test-cases\homepage_test.spec.ts" time="5.622">
+<testsuites id="" name="" tests="25" failures="0" skipped="0" errors="0" time="147.17521799999847">
+<testsuite name="test-cases\homepage_test.spec.ts" timestamp="2023-08-10T13:10:02.068Z" hostname="" tests="25" failures="0" skipped="0" time="146.133" errors="0">
+<testcase name="All homepage component test › tc-007, career link works or not" classname="test-cases\homepage_test.spec.ts" time="4.181">
 </testcase>
-<testcase name="All homepage component test › tc=009, search button clickable or not" classname="test-cases\homepage_test.spec.ts" time="4.999">
+<testcase name="All homepage component test › tc=009, search button clickable or not" classname="test-cases\homepage_test.spec.ts" time="4.08">
 </testcase>
-<testcase name="All homepage component test › tc=010, search something and verify search field" classname="test-cases\homepage_test.spec.ts" time="5.879">
+<testcase name="All homepage component test › tc=010, search something and verify search field" classname="test-cases\homepage_test.spec.ts" time="6.598">
 </testcase>
-<testcase name="All homepage component test › tc-011, product tab functionality" classname="test-cases\homepage_test.spec.ts" time="6.538">
+<testcase name="All homepage component test › tc-011, product tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.758">
 </testcase>
-<testcase name="All homepage component test › tc-012, application tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.625">
+<testcase name="All homepage component test › tc-012, application tab functionality" classname="test-cases\homepage_test.spec.ts" time="5.096">
 </testcase>
-<testcase name="All homepage component test › tc-013, services &amp; support tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.505">
+<testcase name="All homepage component test › tc-013, services &amp; support tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.483">
+</testcase>
+<testcase name="All homepage component test › tc-015, software list check" classname="test-cases\homepage_test.spec.ts" time="5.936">
+</testcase>
+<testcase name="All homepage component test › tc-016, instruments list check" classname="test-cases\homepage_test.spec.ts" time="7.028">
+</testcase>
+<testcase name="All homepage component test › tc-017, transducers list check" classname="test-cases\homepage_test.spec.ts" time="4.232">
+</testcase>
+<testcase name="All homepage component test › tc-019, electric power list check" classname="test-cases\homepage_test.spec.ts" time="8.173">
+</testcase>
+<testcase name="All homepage component test › tc-020, oem custom sensor list check" classname="test-cases\homepage_test.spec.ts" time="8.706">
+</testcase>
+<testcase name="All homepage component test › tc-021, reliability list check" classname="test-cases\homepage_test.spec.ts" time="6.965">
+</testcase>
+<testcase name="All homepage component test › tc-023, hbk assured service list check" classname="test-cases\homepage_test.spec.ts" time="6.667">
+</testcase>
+<testcase name="All homepage component test › tc-024, calibration list check" classname="test-cases\homepage_test.spec.ts" time="5.391">
+</testcase>
+<testcase name="All homepage component test › tc-025, material characterization list check" classname="test-cases\homepage_test.spec.ts" time="6.533">
+</testcase>
+<testcase name="All homepage component test › tc-041, about in footer section check" classname="test-cases\homepage_test.spec.ts" time="4.266">
+</testcase>
+<testcase name="All homepage component test › tc-042, our history in footer section check" classname="test-cases\homepage_test.spec.ts" time="6.199">
+</testcase>
+<testcase name="All homepage component test › tc-043, executive management in footer section check" classname="test-cases\homepage_test.spec.ts" time="6.627">
+</testcase>
+<testcase name="All homepage component test › tc-044, career in footer section check" classname="test-cases\homepage_test.spec.ts" time="4.855">
+</testcase>
+<testcase name="All homepage component test › tc-045, orgs and memberships in footer section check" classname="test-cases\homepage_test.spec.ts" time="6.44">
+</testcase>
+<testcase name="All homepage component test › tc-046, business ethics in footer section check" classname="test-cases\homepage_test.spec.ts" time="6.525">
+</testcase>
+<testcase name="All homepage component test › tc-047, export control in footer section check" classname="test-cases\homepage_test.spec.ts" time="5.968">
+</testcase>
+<testcase name="All homepage component test › tc-048, quality management in footer section check" classname="test-cases\homepage_test.spec.ts" time="5.963">
+</testcase>
+<testcase name="All homepage component test › tc-049, terms &amp; conditions in footer section check" classname="test-cases\homepage_test.spec.ts" time="5.488">
+</testcase>
+<testcase name="All homepage component test › tc-050, applications in footer section check" classname="test-cases\homepage_test.spec.ts" time="4.975">
 </testcase>
 </testsuite>
 </testsuites>

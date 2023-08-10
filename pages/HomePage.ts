@@ -97,12 +97,12 @@ export default class Homepage extends BasePage {
     name: "Executive Management",
   });
 
-  public career: Locator = this.page
+  public careers: Locator = this.page
     .locator("#linklist-caf818c06a")
     .getByRole("link", { name: "Careers" });
 
   public orgAndMembership: Locator = this.page.getByRole("link", {
-    name: "Organizations & Memberships",
+    name: "Organisations & Memberships",
   });
 
   public businessEthics: Locator = this.page.getByRole("link", {
@@ -197,38 +197,35 @@ export default class Homepage extends BasePage {
 
   /* Methods/Actions */
 
-  async clickCareer() {
-    await this.careenBtn.click();
-  }
+  // async clickCareer() {
+  //   await this.careenBtn.click();
+  // }
 
-  async languageOption() {
-    await this.languageOptn.hover();
-  }
+  // async languageOption() {
+  //   await this.languageOptn.hover();
+  // }
 
-  async searchBtnClick() {
-    await this.searchBtn.click();
-  }
+  // async searchBtnClick() {
+  //   await this.searchBtn.click();
+  // }
 
-  async typeInSearchBox(string: string) {
-    await this.searchField.type(string);
-  }
+  // async typeInSearchBox(string: string) {
+  //   await this.searchField.type(string);
+  // }
 
-  async searchGoBTNClick() {
-    await this.searchGoBtn.click();
-  }
+  // async searchGoBTNClick() {
+  //   await this.searchGoBtn.click();
+  // }
 
-  async clickProductTab() {
-    await this.productTab.click();
-  }
+  // async clickProductTab() {
+  //   await this.productTab.click();
+  // }
 
-  async clickApplicationsTab() {
-    await this.applicationsTab.click();
-  }
+  // async clickApplicationsTab() {
+  //   await this.applicationsTab.click();
+  // }
 
-  async clickServiceAndSupportTab() {
-    await this.serviceTab.click();
-  }
-
-  
-  
+  // async clickServiceAndSupportTab() {
+  //   await this.serviceTab.click();
+  // }
 }
