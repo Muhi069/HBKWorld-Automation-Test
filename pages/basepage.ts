@@ -15,7 +15,7 @@ export default class BasePage {
     await locator.click();
   }
 
-  async typeSomething(string: string, locator: Locator) {
+  async typeSomething(locator: Locator, string: string) {
     await locator.fill(string);
   }
 }

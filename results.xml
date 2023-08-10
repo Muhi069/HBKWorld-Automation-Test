@@ -1,16 +1,16 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="35.768195999998596">
-<testsuite name="test-cases\homepage_test.spec.ts" timestamp="2023-08-09T13:19:13.195Z" hostname="" tests="6" failures="0" skipped="0" time="34.587" errors="0">
-<testcase name="All homepage component test › tc-007, career link works or not" classname="test-cases\homepage_test.spec.ts" time="6.705">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="33.17283800000045">
+<testsuite name="test-cases\homepage_test.spec.ts" timestamp="2023-08-10T07:06:16.356Z" hostname="" tests="6" failures="0" skipped="0" time="32.168" errors="0">
+<testcase name="All homepage component test › tc-007, career link works or not" classname="test-cases\homepage_test.spec.ts" time="5.622">
 </testcase>
-<testcase name="All homepage component test › tc=009, search button clickable or not" classname="test-cases\homepage_test.spec.ts" time="4.769">
+<testcase name="All homepage component test › tc=009, search button clickable or not" classname="test-cases\homepage_test.spec.ts" time="4.999">
 </testcase>
-<testcase name="All homepage component test › tc=010, search something and verify search field" classname="test-cases\homepage_test.spec.ts" time="9.946">
+<testcase name="All homepage component test › tc=010, search something and verify search field" classname="test-cases\homepage_test.spec.ts" time="5.879">
 </testcase>
-<testcase name="All homepage component test › tc-011, product tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.491">
+<testcase name="All homepage component test › tc-011, product tab functionality" classname="test-cases\homepage_test.spec.ts" time="6.538">
 </testcase>
-<testcase name="All homepage component test › tc-012, application tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.097">
+<testcase name="All homepage component test › tc-012, application tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.625">
 </testcase>
-<testcase name="All homepage component test › tc-013, services &amp; support tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.579">
+<testcase name="All homepage component test › tc-013, services &amp; support tab functionality" classname="test-cases\homepage_test.spec.ts" time="4.505">
 </testcase>
 </testsuite>
 </testsuites>

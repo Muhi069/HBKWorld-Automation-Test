@@ -228,4 +228,7 @@ export default class Homepage extends BasePage {
   async clickServiceAndSupportTab() {
     await this.serviceTab.click();
   }
+
+  
+  
 }

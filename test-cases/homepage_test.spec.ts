@@ -18,7 +18,7 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.careenBtn).toBeVisible();
-    await home.clickCareer();
+    await home.clickOnElement(home.careenBtn);
     await expect(page).toHaveTitle("Careers | About - HBK");
   });
 
@@ -27,7 +27,7 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.searchBtn).toBeVisible();
-    await home.searchBtnClick();
+    await home.clickOnElement(home.searchBtn);
     await expect(home.searchField).toBeVisible();
     await expect(home.searchGoBtn).toBeVisible();
   });
@@ -37,11 +37,11 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.searchBtn).toBeVisible();
-    await home.searchBtnClick();
+    await home.clickOnElement(home.searchBtn);
     await expect(home.searchField).toBeVisible();
-    await home.typeInSearchBox("aerospace");
+    await home.typeSomething(home.searchField, "Aerospace");
     await expect(home.searchGoBtn).toBeVisible();
-    await home.searchGoBTNClick();
+    await home.clickOnElement(home.searchGoBtn);
     await expect(page).toHaveTitle("Search - HBK");
     // await page.waitForLoadState;
     // await expect(page).toContainEqual("Aerospace");
@@ -52,7 +52,7 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.productTab).toBeVisible();
-    await home.clickProductTab();
+    await home.clickOnElement(home.productTab);
     await expect(home.softwareList).toBeVisible();
     await expect(home.instrumentsList).toBeVisible();
     await expect(home.transducersList).toBeVisible();
@@ -63,7 +63,7 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.applicationsTab).toBeVisible();
-    await home.clickApplicationsTab();
+    await home.clickOnElement(home.applicationsTab);
     await expect(home.electricPowerList).toBeVisible();
     await expect(home.oemList).toBeVisible();
     await expect(home.reliabilityList).toBeVisible();
@@ -74,7 +74,7 @@ test.describe("All homepage component test", () => {
       "Homepage - The product physics experts - HBK"
     );
     await expect(home.serviceTab).toBeVisible();
-    await home.clickServiceAndSupportTab();
+    await home.clickOnElement(home.serviceTab);
     await expect(home.hbkServiceContactList).toBeVisible();
     await expect(home.calibrationList).toBeVisible();
     await expect(home.materialList).toBeVisible();
