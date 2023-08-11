@@ -195,6 +195,11 @@ export default class Homepage extends BasePage {
     exact: true,
   });
 
+  public modernSlaveryLink: Locator = this.page.getByText(
+    "Modern Slavery and Human Trafficking Statement",
+    { exact: true }
+  );
+
   /* Methods/Actions */
 
   // async clickCareer() {
